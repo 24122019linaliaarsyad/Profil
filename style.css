@@ -1,0 +1,154 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling halaman */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ADD8E6;
+}
+
+/* Container utama */
+.container {
+    text-align: center;
+    background: #ffa500;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Foto profil */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Nama pengguna */
+.name {
+    font-weight: bold;
+    font-size: 24px;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Deskripsi */
+.description {
+    font-size: 14px;
+    color: #FFDF00;
+    margin-top: 10px;
+    padding: 0 10px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+/* Styling Galeri */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 20px auto; /* Pusatkan galeri */
+    padding: 10px;
+    width: 100%;
+    max-width: 500px; /* Maksimal lebar galeri */
+    justify-content: center; /* Pastikan grid tetap di tengah */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Gaya Gambar */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover */
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        max-width: 90%;
+    }
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        max-width: 90%;
+    }
+}
+
+/* Container link */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Tombol link */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+/* Warna khusus untuk tiap platform */
+.facebook {
+    background: #1877F2;
+}
+.facebook:hover {
+    background: #1258a8;
+}
+
+.youtube {
+    background: #FF0000;
+}
+.youtube:hover {
+    background: #c20000;
+}
+
+.tiktok {
+    background: #000000;
+}
+.tiktok:hover {
+    background: #222222;
+}
+
+.instagram {
+    background: #E4405F;
+}
+.instagram:hover {
+    background: #b82c46;
+}
+
+/* Ukuran ikon */
+.link i {
+    font-size: 20px;
+}
